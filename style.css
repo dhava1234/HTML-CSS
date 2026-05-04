@@ -1,0 +1,79 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.6;
+}
+
+.parallax {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-1 {
+    background-image: url('capucino.jpg');
+}
+
+.bg-2 {
+    background-image: url('hamburger.jpg');
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.normal-section {
+    padding: 20px 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.btn-contact {
+    padding: 12px 25px;
+    background-color: aqua;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer p {
+    color: black;
+}
