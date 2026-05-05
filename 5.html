@@ -9,30 +9,44 @@
 </head>
 
 <body>
-    <section class="parallax bg-1">
+
+    <header class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">MyPortofolio</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#ability">Ability</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="parallax bg-1">
         <div class="content">
             <h1>Halo, Saya Muhammad Dhava Agsella</h1>
-            <img src="jokowi.jpg" class="profile" alt="Profile">
+            <img src="jokowi.jpg" class="profile">
             <p>Web Programmer & Instructor</p>
         </div>
     </section>
 
-    <section class="normal-section">
+    <section id="about" class="normal-section">
         <div class="container">
             <h2>Tentang Saya</h2>
             <div class="about-images">
-                <img src="capucino.jpg" alt="Foto 1">
-                <img src="hamburger.jpg" alt="Foto 2">
-                <img src="jokowi.jpg" alt="Foto 3">
+                <img src="capucino.jpg">
+                <img src="hamburger.jpg">
+                <img src="jokowi.jpg">
             </div>
-
         </div>
     </section>
 
-    <section class="parallax bg-2">
+    <section id="ability" class="parallax bg-2">
         <div class="content">
             <h2>Keahlian Saya</h2>
             <p>Cyber Security, Web Development</p>
+
             <div class="wrapper">
                 <div class="skill-wrapper">
                     <h3>Skill</h3>
@@ -43,6 +57,7 @@
                         <li>Cyber Security</li>
                     </ul>
                 </div>
+
                 <div class="experience-wrapper">
                     <h3>Experience</h3>
                     <ul>
@@ -53,25 +68,34 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </section>
+
     <section class="normal-section">
-        <div class="container">
+        <div id="contact" class="container">
             <h2>Hubungi Saya</h2>
-            <br><br>
-            <p>Tertarik bekerja sama? Kirimkan pesan melalui email atau media sosial saya</p>
-            <form action="" method="post" class="contact-form">
-                <input type="text" name="name" placeholder="Isi nama anda">
-                <input type="email" name="email" placeholder="Isi email">
-                <textarea name="message" cols="30" rows="10" placeholder="Isi pesan"></textarea>
+            <p>Tertarik bekerja sama?</p>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Nama">
+                <input type="email" placeholder="Email">
+                <textarea rows="5" placeholder="Pesan"></textarea>
                 <button type="submit">Kirim</button>
             </form>
-            <button class="btn-contact">Kirimkan Pesan</button>
         </div>
     </section>
-    <footer class="footer">
-        <p>&copy; 2026 Personal Brand, Dibuat di PPKD JP</p>
+
+    <footer>
+        <p>&copy; 2026 Personal Brand</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
+
 </body>
 
 </html>
